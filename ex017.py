@@ -1,5 +1,4 @@
-#faça um programa que leia o comprimento do cateto oposto
-# e do cateto adjacente de um triangulo retangulo
-# calcule e mostre o comprimento da hipotenusa.
-#o quadrado da hipotenusa é igual a soma dos quadrados dos catetos
-
+import math
+catoposto = float(input('Comprimento do cateto oposto: '))
+catadj = float(input('Comprimento do cateto adjacente: '))
+print('A Hipotenusa vai medir {:.2f}'.format(math.hypot(catoposto, catadj)))

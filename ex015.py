@@ -1,13 +1,8 @@
-#Escreva um programa que pergunte a quantidade de Km percorridos
-#por um carro alugado e a quantidade de dias pelos quais ele foi usado
-#Calcule o preço a pagar, sabendo que o carro custa R$60,00 por dia
-#E R$0,15 por km rodado.
-
-dias = int(input('Digite quantos dias o veiculo foi utilizado: '))
-km = float(input('Digite quantos kms foram rodados: '))
-valordia = float(dias * 60.00)
-kmrodado = float(km * 0.15)
-total = float(valordia + kmrodado)
-
-print('O Veiculo usado {0} dias e foi rodado {1} Km. \nO valor pelos dias alugados é R${2}. \nO Valor equivalente aos Kms Rodados é R${3}. \nO total a Pagar é R${4}.'.format(dias, km, valordia, kmrodado, total))
-
+dias = int(input('Digite quantos dias o carro permaneceu alugado: '))
+km = float(input('Digite quantos quilometros foram rodados: '))
+totalDias = dias * 60
+totalKm = km * 0.15
+total = totalDias + totalKm
+print('O total gasto com a Diaria do veiculo foi R${:.2f} referentes a {} dias alugados'.format(totalDias, dias))
+print('O total gasto com a rodagem foi R${:.2f}, referente aos {}Km percorridos'.format(totalKm, km))
+print('O total a pagar é R${:.2f}'.format(total))

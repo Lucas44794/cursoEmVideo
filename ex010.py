@@ -1,10 +1,6 @@
-# Crie um programa que leia quanto dinheiro uma pessoa tem na carteira
-# e mostre quantos Dólares ela pode comprar
-# Cotação do Dia: 5,41
+valor = float(input('Digite o valor que você tem na carteira: '))
+dolar = 5.12
+atual = valor / dolar
 
-carteira = float(input('Digite quanto você tem na carteira: '))
-cotacao = 5.41
-conversao = carteira / cotacao
-
-print('Você tem {} Reais Na carteira e pode comprar {:.2f} Dolares. \n Cotação do dia: {}'.format(carteira, conversao,
-                                                                                              cotacao))
+print('Com R$ {} que você tem é possivel comprar US$ {:.2f} Dólares. '.format(valor, atual))
+print('Cotação atual: 1 Dólar a R${}'.format(dolar))
