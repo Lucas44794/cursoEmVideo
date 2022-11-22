@@ -1,3 +1,4 @@
+from time import sleep
 num1 = int(input('Primeiro Número: '))
 num2 = int(input('Segundo Número: '))
 opcao = 0
@@ -40,3 +41,4 @@ while opcao != 5:
         else:
             print('Opção Invalida, tente novamente!')
             print('-=' * 30)
+    sleep(2)
